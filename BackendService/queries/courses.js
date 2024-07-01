@@ -5,7 +5,7 @@ import { Module } from "../model/module.model";
 import { Testimonial } from "../model/testimonial-model";
 import { User } from "../model/user-model";
 
-export async function getCourses() {
+export async function getCourseList() {
   const courses = await Course.find({})
     .populate({
       path: "category",
