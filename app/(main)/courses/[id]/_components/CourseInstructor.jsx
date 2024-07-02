@@ -9,7 +9,7 @@ const CourseInstructor = async ({ course }) => {
     instructor._id.toString()
   );
 
-  console.log(courseDetailsByInstructor);
+  console.log("courseDetailsByInstructor", courseDetailsByInstructor);
 
   return (
     <div className="bg-gray-50 rounded-md p-8">
