@@ -8,6 +8,8 @@ import { Category } from "../model/category-model";
 import { Module } from "../model/module.model";
 import { Testimonial } from "../model/testimonial-model";
 import { User } from "../model/user-model";
+import { getEnrollmentsForCourse } from "./enrollments";
+import { getTestimonialsForCourse } from "./testimonials";
 
 export async function getCourseList() {
   const courses = await Course.find({})
