@@ -5,14 +5,12 @@ import bcrypt from "bcryptjs";
 import { User } from "./BackendService/model/user-model";
 
 export const {
-  handlers: { GET, POST },
   auth,
   signIn,
   signOut,
+  handlers: { GET, POST },
 } = NextAuth({
-  session: {
-    strategy: "jwt",
-  },
+  ...authConfig,
   providers: [
     CredentialsProvider({
       async authorize(credentials) {
