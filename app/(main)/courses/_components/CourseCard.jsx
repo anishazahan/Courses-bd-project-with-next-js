@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { formatPrice } from "@/lib/formatPrice";
 
 const CourseCard = ({ course }) => {
+  console.log("course....", course);
   return (
     <Link key={course.id} href={`/courses/${course.id}`}>
       <div className="group hover:shadow-sm transition overflow-hidden border rounded-lg p-3 h-full">
